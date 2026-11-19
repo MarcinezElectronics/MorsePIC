@@ -1,0 +1,1109 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1619 ]
+[d frameptr 6 ]
+"10 C:\Users\admin\Desktop\MorsePIC.X\i2c_lcd.c
+[e E10203 . `uc
+I2C_NOERR 0
+I2C_BUSY 1
+I2C_FAIL 2
+]
+"146 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/i2c_master.c
+[e E10273 . `uc
+I2C_IDLE 0
+I2C_SEND_ADR_READ 1
+I2C_SEND_ADR_WRITE 2
+I2C_TX 3
+I2C_RX 4
+I2C_RCEN 5
+I2C_TX_EMPTY 6
+I2C_SEND_RESTART_READ 7
+I2C_SEND_RESTART_WRITE 8
+I2C_SEND_RESTART 9
+I2C_SEND_STOP 10
+I2C_RX_ACK 11
+I2C_RX_NACK_STOP 12
+I2C_RX_NACK_RESTART 13
+I2C_RESET 14
+I2C_ADDRESS_NACK 15
+]
+"165
+[e E363 . `uc
+I2C_STOP 1
+I2C_RESTART_READ 2
+I2C_RESTART_WRITE 3
+I2C_CONTINUE 4
+I2C_RESET_LINK 5
+]
+[e E358 . `uc
+I2C_NOERR 0
+I2C_BUSY 1
+I2C_FAIL 2
+]
+"191
+[e E10291 . `uc
+I2C_DATA_COMPLETE 0
+I2C_WRITE_COLLISION 1
+I2C_ADDR_NACK 2
+I2C_DATA_NACK 3
+I2C_TIMEOUT 4
+I2C_NULL 5
+]
+"67 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/examples/i2c_master_example.c
+[e E358 . `uc
+I2C_NOERR 0
+I2C_BUSY 1
+I2C_FAIL 2
+]
+"68
+[e E363 . `uc
+I2C_STOP 1
+I2C_RESTART_READ 2
+I2C_RESTART_WRITE 3
+I2C_CONTINUE 4
+I2C_RESET_LINK 5
+]
+"18 C:\Users\admin\Desktop\MorsePIC.X/sys_time.h
+[s S275 . 9 `ul 1 start_time 4 0 `ul 1 interval 4 4 `a 1 running 1 8 ]
+"24 C:\Users\admin\Desktop\MorsePIC.X/sys_time.h
+[v _timer_create@sys_time$F515 timer_create `T(S275  1 s 9 timer_create ]
+"7 C:\Users\admin\Desktop\MorsePIC.X/button.h
+[s S417 . 18 `uc 1 pin_state 1 0 `uc 1 debounced_state 1 1 `ul 1 last_debounce_time 4 2 `ul 1 press_start_time 4 6 `a 1 pressed_event 1 10 `a 1 long_pressed_event 1 11 `a 1 long_press_handled 1 12 `us 1 debounce_delay_ms 2 13 `us 1 long_press_ms 2 15 `a 1 active_low 1 17 ]
+"4 C:\Users\admin\Desktop\MorsePIC.X\button.c
+[v _button_create button_create `(S417  1 e 18 0 ]
+"19
+[v _button_update button_update `(v  1 e 1 0 ]
+"65
+[v _button_was_clicked button_was_clicked `(a  1 e 1 0 ]
+"73
+[v _button_was_long_pressed button_was_long_pressed `(a  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Users\admin\Desktop\MorsePIC.X\i2c_lcd.c
+[v _I2C_Write_Byte I2C_Write_Byte `(v  1 s 1 I2C_Write_Byte ]
+"22
+[v _LCD_Write_Nibble LCD_Write_Nibble `(v  1 s 1 LCD_Write_Nibble ]
+"34
+[v _LCD_Send LCD_Send `(v  1 s 1 LCD_Send ]
+"39
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+"46
+[v _LCD_Char LCD_Char `(v  1 e 1 0 ]
+"50
+[v _LCD_String LCD_String `(v  1 e 1 0 ]
+"56
+[v _LCD_SetCursor LCD_SetCursor `(v  1 e 1 0 ]
+"61
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+"65
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"96
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"149
+[v _LCD_CreateChar LCD_CreateChar `(v  1 e 1 0 ]
+"7 C:\Users\admin\Desktop\MorsePIC.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"142 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/examples/i2c_master_example.c
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E363  1 s 1 rd1RegCompleteHandler ]
+"149
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E363  1 s 1 rd2RegCompleteHandler ]
+"156
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E363  1 s 1 wr1RegCompleteHandler ]
+"163
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E363  1 s 1 wr2RegCompleteHandler ]
+"170
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E363  1 s 1 rdBlkRegCompleteHandler ]
+"167 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/i2c_master.c
+[v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
+"176
+[v _I2C_Open I2C_Open `(E10203  1 e 1 0 ]
+"209
+[v _I2C_Close I2C_Close `(E10203  1 e 1 0 ]
+"224
+[v _I2C_MasterOperation I2C_MasterOperation `(E358  1 e 1 0 ]
+"246
+[v _I2C_MasterRead I2C_MasterRead `(E358  1 e 1 0 ]
+"251
+[v _I2C_MasterWrite I2C_MasterWrite `(E10203  1 e 1 0 ]
+"263
+[v _I2C_SetBuffer I2C_SetBuffer `(v  1 e 1 0 ]
+"273
+[v _I2C_SetDataCompleteCallback I2C_SetDataCompleteCallback `(v  1 e 1 0 ]
+"283
+[v _I2C_SetAddressNackCallback I2C_SetAddressNackCallback `(v  1 e 1 0 ]
+"298
+[v _I2C_SetCallback I2C_SetCallback `(v  1 s 1 I2C_SetCallback ]
+"312
+[v _I2C_Poller I2C_Poller `(v  1 s 1 I2C_Poller ]
+"321
+[v _I2C_MasterFsm I2C_MasterFsm `T(v  1 s 1 I2C_MasterFsm ]
+"333
+[v _I2C_DO_IDLE I2C_DO_IDLE `(E10273  1 s 1 I2C_DO_IDLE ]
+"340
+[v _I2C_DO_SEND_ADR_READ I2C_DO_SEND_ADR_READ `(E10273  1 s 1 I2C_DO_SEND_ADR_READ ]
+"347
+[v _I2C_DO_SEND_ADR_WRITE I2C_DO_SEND_ADR_WRITE `(E10273  1 s 1 I2C_DO_SEND_ADR_WRITE ]
+"354
+[v _I2C_DO_TX I2C_DO_TX `(E10273  1 s 1 I2C_DO_TX ]
+"378
+[v _I2C_DO_RX I2C_DO_RX `(E10273  1 s 1 I2C_DO_RX ]
+"402
+[v _I2C_DO_RCEN I2C_DO_RCEN `(E10273  1 s 1 I2C_DO_RCEN ]
+"409
+[v _I2C_DO_TX_EMPTY I2C_DO_TX_EMPTY `(E10273  1 s 1 I2C_DO_TX_EMPTY ]
+"450
+[v _I2C_DO_SEND_RESTART_READ I2C_DO_SEND_RESTART_READ `(E10273  1 s 1 I2C_DO_SEND_RESTART_READ ]
+"456
+[v _I2C_DO_SEND_RESTART_WRITE I2C_DO_SEND_RESTART_WRITE `(E10273  1 s 1 I2C_DO_SEND_RESTART_WRITE ]
+"463
+[v _I2C_DO_SEND_RESTART I2C_DO_SEND_RESTART `(E10273  1 s 1 I2C_DO_SEND_RESTART ]
+"469
+[v _I2C_DO_SEND_STOP I2C_DO_SEND_STOP `(E10273  1 s 1 I2C_DO_SEND_STOP ]
+"475
+[v _I2C_DO_RX_ACK I2C_DO_RX_ACK `(E10273  1 s 1 I2C_DO_RX_ACK ]
+"482
+[v _I2C_DO_RX_NACK_STOP I2C_DO_RX_NACK_STOP `(E10273  1 s 1 I2C_DO_RX_NACK_STOP ]
+"488
+[v _I2C_DO_RX_NACK_RESTART I2C_DO_RX_NACK_RESTART `(E10273  1 s 1 I2C_DO_RX_NACK_RESTART ]
+"494
+[v _I2C_DO_RESET I2C_DO_RESET `(E10273  1 s 1 I2C_DO_RESET ]
+"500
+[v _I2C_DO_ADDRESS_NACK I2C_DO_ADDRESS_NACK `(E10273  1 s 1 I2C_DO_ADDRESS_NACK ]
+"520
+[v _I2C_CallbackReturnStop I2C_CallbackReturnStop `(E363  1 e 1 0 ]
+"525
+[v _I2C_CallbackReturnReset I2C_CallbackReturnReset `(E363  1 e 1 0 ]
+"543
+[v _I2C_MasterOpen I2C_MasterOpen `T(a  1 s 1 I2C_MasterOpen ]
+"557
+[v _I2C_MasterClose I2C_MasterClose `T(v  1 s 1 I2C_MasterClose ]
+"563
+[v _I2C_MasterGetRxData I2C_MasterGetRxData `T(uc  1 s 1 I2C_MasterGetRxData ]
+"568
+[v _I2C_MasterSendTxData I2C_MasterSendTxData `T(v  1 s 1 I2C_MasterSendTxData ]
+"573
+[v _I2C_MasterEnableRestart I2C_MasterEnableRestart `T(v  1 s 1 I2C_MasterEnableRestart ]
+"578
+[v _I2C_MasterDisableRestart I2C_MasterDisableRestart `T(v  1 s 1 I2C_MasterDisableRestart ]
+"583
+[v _I2C_MasterStartRx I2C_MasterStartRx `T(v  1 s 1 I2C_MasterStartRx ]
+"588
+[v _I2C_MasterStart I2C_MasterStart `T(v  1 s 1 I2C_MasterStart ]
+"593
+[v _I2C_MasterStop I2C_MasterStop `T(v  1 s 1 I2C_MasterStop ]
+"598
+[v _I2C_MasterIsNack I2C_MasterIsNack `T(a  1 s 1 I2C_MasterIsNack ]
+"603
+[v _I2C_MasterSendAck I2C_MasterSendAck `T(v  1 s 1 I2C_MasterSendAck ]
+"609
+[v _I2C_MasterSendNack I2C_MasterSendNack `T(v  1 s 1 I2C_MasterSendNack ]
+"615
+[v _I2C_MasterClearBusCollision I2C_MasterClearBusCollision `T(v  1 s 1 I2C_MasterClearBusCollision ]
+"625
+[v _I2C_MasterEnableIrq I2C_MasterEnableIrq `T(v  1 s 1 I2C_MasterEnableIrq ]
+"635
+[v _I2C_MasterDisableIrq I2C_MasterDisableIrq `T(v  1 s 1 I2C_MasterDisableIrq ]
+"640
+[v _I2C_MasterClearIrq I2C_MasterClearIrq `T(v  1 s 1 I2C_MasterClearIrq ]
+"645
+[v _I2C_MasterSetIrq I2C_MasterSetIrq `T(v  1 s 1 I2C_MasterSetIrq ]
+"650
+[v _I2C_MasterWaitForEvent I2C_MasterWaitForEvent `T(v  1 s 1 I2C_MasterWaitForEvent ]
+"54 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"58
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"120
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"142
+[v _TMR1_Reload TMR1_Reload `(v  1 e 1 0 ]
+"157
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+"171
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+"175
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"39 C:\Users\admin\Desktop\MorsePIC.X\morse.c
+[v _decode_morse decode_morse `(uc  1 e 1 0 ]
+"49
+[v _add_morse_symbol add_morse_symbol `(v  1 e 1 0 ]
+"70
+[v _process_word_space process_word_space `(v  1 e 1 0 ]
+"91
+[v _process_morse_completion process_morse_completion `(v  1 e 1 0 ]
+"23 C:\Users\admin\Desktop\MorsePIC.X\sys_time.c
+[v _sys_time_isr sys_time_isr `(v  1 e 1 0 ]
+"32
+[v _millis millis `(ul  1 e 4 0 ]
+"71
+[v _timer_start timer_start `(v  1 e 1 0 ]
+"75
+[v _timer_expired timer_expired `(a  1 e 1 0 ]
+"80
+[v _timer_check_and_reset timer_check_and_reset `(a  1 e 1 0 ]
+[s S283 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"358 C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h
+[s S292 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S297 . 1 `S283 1 . 1 0 `S292 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES297  1 e 1 @11 ]
+[s S441 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"519
+[u S450 . 1 `S441 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES450  1 e 1 @14 ]
+[s S26 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"581
+[u S35 . 1 `S26 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES35  1 e 1 @16 ]
+[s S1159 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 TMR4IF 1 0 :1:1 
+`uc 1 TMR6IF 1 0 :1:2 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 C1IF 1 0 :1:5 
+`uc 1 C2IF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"643
+[u S1168 . 1 `S1159 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES1168  1 e 1 @17 ]
+"872
+[v _TMR1 TMR1 `VEus  1 e 2 @22 ]
+"879
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"899
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"919
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S79 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+"941
+[s S86 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[u S92 . 1 `S79 1 . 1 0 `S86 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES92  1 e 1 @24 ]
+"986
+[v _T1GCON T1GCON `VEuc  1 e 1 @25 ]
+[s S109 . 1 `uc 1 T1GSS 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nDONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 TMR1GE 1 0 :1:7 
+]
+"1006
+[s S117 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
+]
+[u S120 . 1 `S109 1 . 1 0 `S117 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES120  1 e 1 @25 ]
+"1598
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1648
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1687
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S47 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1766
+[u S56 . 1 `S47 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES56  1 e 1 @144 ]
+[s S222 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"2060
+[s S229 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S236 . 1 `S222 1 . 1 0 `S229 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES236  1 e 1 @149 ]
+"2182
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"2240
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2615
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S462 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"2630
+[u S469 . 1 `S462 1 . 1 0 ]
+[v _LATAbits LATAbits `VES469  1 e 1 @268 ]
+"2665
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2704
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"3040
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"3315
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"3362
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3401
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"4498
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"4556
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"4595
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"4665
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"4919
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
+"5427
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+[s S1180 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"5449
+[u S1189 . 1 `S1180 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES1189  1 e 1 @532 ]
+"5549
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+[s S973 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"5582
+[s S979 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S984 . 1 `S973 1 . 1 0 `S979 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES984  1 e 1 @533 ]
+"5819
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @534 ]
+[s S1138 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"5841
+[u S1147 . 1 `S1138 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES1147  1 e 1 @534 ]
+"6063
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"6108
+[v _ODCONB ODCONB `VEuc  1 e 1 @653 ]
+"6147
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+"6763
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @780 ]
+"6808
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @781 ]
+"6847
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @782 ]
+"6909
+[v _INLVLA INLVLA `VEuc  1 e 1 @908 ]
+"6959
+[v _INLVLB INLVLB `VEuc  1 e 1 @909 ]
+"6998
+[v _INLVLC INLVLC `VEuc  1 e 1 @910 ]
+"22570
+[v _SSPCLKPPS SSPCLKPPS `VEuc  1 e 1 @3616 ]
+"22622
+[v _SSPDATPPS SSPDATPPS `VEuc  1 e 1 @3617 ]
+"23350
+[v _RA0PPS RA0PPS `VEuc  1 e 1 @3728 ]
+"23570
+[v _RB4PPS RB4PPS `VEuc  1 e 1 @3740 ]
+"4 C:\Users\admin\Desktop\MorsePIC.X\i2c_lcd.c
+[v _i2c_tx_buffer i2c_tx_buffer `[1]uc  1 s 1 i2c_tx_buffer ]
+"104
+[v _char_A_ekezet char_A_ekezet `DC[8]uc  1 e 8 0 ]
+"115
+[v _char_E_ekezet char_E_ekezet `DC[8]uc  1 e 8 0 ]
+"126
+[v _char_O_ekezet char_O_ekezet `DC[8]uc  1 e 8 0 ]
+"137
+[v _char_U_ekezet char_U_ekezet `DC[8]uc  1 e 8 0 ]
+"146 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/i2c_master.c
+[v _fsmStateTable fsmStateTable `DC[16]*.37(E10273  1 e 32 0 ]
+[s S947 . 30 `[6]*.37(E363 1 callbackTable 12 0 `[6]*.30v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.39uc 1 data_ptr 2 23 `ui 1 data_length 2 25 `E10273 1 state 1 27 `E358 1 error 1 28 `uc 1 addressNackCheck 1 29 :1:0 
+`uc 1 busy 1 29 :1:1 
+`uc 1 inUse 1 29 :1:2 
+`uc 1 bufferFree 1 29 :1:3 
+]
+"165
+[v _I2C_Status I2C_Status `S947  1 e 30 0 ]
+"57 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"58
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
+"4 C:\Users\admin\Desktop\MorsePIC.X\morse.c
+[v _morse_buffer morse_buffer `[8]uc  1 s 8 morse_buffer ]
+"5
+[v _morse_len morse_len `uc  1 s 1 morse_len ]
+"8
+[v _last_input_time last_input_time `ul  1 e 4 0 ]
+"9
+[v _waiting_for_timeout waiting_for_timeout `a  1 e 1 0 ]
+"10
+[v _cursor_col cursor_col `uc  1 e 1 0 ]
+"11
+[v _space_added space_added `a  1 e 1 0 ]
+[s S1511 . 3 `*.25DCuc 1 code 2 0 `uc 1 letter 1 2 ]
+"20
+[v _morse_table morse_table `DC[41]S1511  1 s 123 morse_table ]
+"3 C:\Users\admin\Desktop\MorsePIC.X\sys_time.c
+[v _ms_counter ms_counter `VEul  1 s 4 ms_counter ]
+"4
+[v _timer1ReloadVal@sys_time$F732 timer1ReloadVal `VEus  1 s 2 timer1ReloadVal ]
+"7 C:\Users\admin\Desktop\MorsePIC.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"61
+[v main@idle_time idle_time `ul  1 a 4 43 ]
+"39
+[v main@is_pressed is_pressed `a  1 a 1 47 ]
+[s S417 . 18 `uc 1 pin_state 1 0 `uc 1 debounced_state 1 1 `ul 1 last_debounce_time 4 2 `ul 1 press_start_time 4 6 `a 1 pressed_event 1 10 `a 1 long_pressed_event 1 11 `a 1 long_press_handled 1 12 `us 1 debounce_delay_ms 2 13 `us 1 long_press_ms 2 15 `a 1 active_low 1 17 ]
+"31
+[v main@btn1 btn1 `S417  1 a 18 57 ]
+[s S275 . 9 `ul 1 start_time 4 0 `ul 1 interval 4 4 `a 1 running 1 8 ]
+"27
+[v main@blink_timer blink_timer `S275  1 a 9 48 ]
+"79
+} 0
+"71 C:\Users\admin\Desktop\MorsePIC.X\sys_time.c
+[v _timer_start timer_start `(v  1 e 1 0 ]
+{
+[s S275 . 9 `ul 1 start_time 4 0 `ul 1 interval 4 4 `a 1 running 1 8 ]
+"72
+[v timer_start@9937 F9937 `S275  1 a 9 11 ]
+"71
+[v timer_start@t t `*.39S275  1 p 2 5 ]
+[v timer_start@interval_ms interval_ms `ul  1 p 4 7 ]
+[v timer_start@F9936 F9936 `S275  1 s 9 F9936 ]
+"73
+} 0
+"18 C:\Users\admin\Desktop\MorsePIC.X/sys_time.h
+[s S275 . 9 `ul 1 start_time 4 0 `ul 1 interval 4 4 `a 1 running 1 8 ]
+"24 C:\Users\admin\Desktop\MorsePIC.X/sys_time.h
+[v _timer_create@sys_time$F515 timer_create `T(S275  1 s 9 timer_create ]
+{
+"25
+[v timer_create@sys_time$F515@10307 F10307 `S275  1 a 9 9 ]
+"24
+[v timer_create@sys_time$F515@interval_ms interval_ms `ul  1 p 4 0 ]
+[v timer_create@sys_time$F515@F10306 F10306 `S275  1 s 9 F10306 ]
+"26
+} 0
+"80 C:\Users\admin\Desktop\MorsePIC.X\sys_time.c
+[v _timer_check_and_reset timer_check_and_reset `(a  1 e 1 0 ]
+{
+[s S275 . 9 `ul 1 start_time 4 0 `ul 1 interval 4 4 `a 1 running 1 8 ]
+[v timer_check_and_reset@t t `*.39S275  1 p 2 19 ]
+"86
+} 0
+"75
+[v _timer_expired timer_expired `(a  1 e 1 0 ]
+{
+[s S275 . 9 `ul 1 start_time 4 0 `ul 1 interval 4 4 `a 1 running 1 8 ]
+[v timer_expired@t t `*.39S275  1 p 2 5 ]
+"78
+} 0
+"70 C:\Users\admin\Desktop\MorsePIC.X\morse.c
+[v _process_word_space process_word_space `(v  1 e 1 0 ]
+{
+"89
+} 0
+"91
+[v _process_morse_completion process_morse_completion `(v  1 e 1 0 ]
+{
+"101
+[v process_morse_completion@i i `i  1 a 2 25 ]
+"93
+[v process_morse_completion@decoded_char decoded_char `uc  1 a 1 24 ]
+"122
+} 0
+"39
+[v _decode_morse decode_morse `(uc  1 e 1 0 ]
+{
+"40
+[v decode_morse@i i `i  1 a 2 6 ]
+"39
+[v decode_morse@code code `*.4DCuc  1 p 1 3 ]
+"46
+} 0
+"3 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+{
+[v strcmp@l l `*.25DCuc  1 p 2 0 ]
+[v strcmp@r r `*.4DCuc  1 p 1 2 ]
+"7
+} 0
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 6 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
+"53
+} 0
+"73 C:\Users\admin\Desktop\MorsePIC.X\button.c
+[v _button_was_long_pressed button_was_long_pressed `(a  1 e 1 0 ]
+{
+[s S417 . 18 `uc 1 pin_state 1 0 `uc 1 debounced_state 1 1 `ul 1 last_debounce_time 4 2 `ul 1 press_start_time 4 6 `a 1 pressed_event 1 10 `a 1 long_pressed_event 1 11 `a 1 long_press_handled 1 12 `us 1 debounce_delay_ms 2 13 `us 1 long_press_ms 2 15 `a 1 active_low 1 17 ]
+[v button_was_long_pressed@btn btn `*.39S417  1 p 2 2 ]
+"79
+} 0
+"65
+[v _button_was_clicked button_was_clicked `(a  1 e 1 0 ]
+{
+[s S417 . 18 `uc 1 pin_state 1 0 `uc 1 debounced_state 1 1 `ul 1 last_debounce_time 4 2 `ul 1 press_start_time 4 6 `a 1 pressed_event 1 10 `a 1 long_pressed_event 1 11 `a 1 long_press_handled 1 12 `us 1 debounce_delay_ms 2 13 `us 1 long_press_ms 2 15 `a 1 active_low 1 17 ]
+[v button_was_clicked@btn btn `*.39S417  1 p 2 2 ]
+"71
+} 0
+"19
+[v _button_update button_update `(v  1 e 1 0 ]
+{
+"34
+[v button_update@is_active is_active `a  1 a 1 22 ]
+"20
+[v button_update@now now `ul  1 a 4 28 ]
+"51
+[v button_update@is_currently_active is_currently_active `a  1 a 1 23 ]
+[s S417 . 18 `uc 1 pin_state 1 0 `uc 1 debounced_state 1 1 `ul 1 last_debounce_time 4 2 `ul 1 press_start_time 4 6 `a 1 pressed_event 1 10 `a 1 long_pressed_event 1 11 `a 1 long_press_handled 1 12 `us 1 debounce_delay_ms 2 13 `us 1 long_press_ms 2 15 `a 1 active_low 1 17 ]
+"19
+[v button_update@btn btn `*.39S417  1 p 2 5 ]
+[v button_update@raw_pin_value raw_pin_value `uc  1 p 1 7 ]
+"59
+} 0
+"7 C:\Users\admin\Desktop\MorsePIC.X/button.h
+[s S417 . 18 `uc 1 pin_state 1 0 `uc 1 debounced_state 1 1 `ul 1 last_debounce_time 4 2 `ul 1 press_start_time 4 6 `a 1 pressed_event 1 10 `a 1 long_pressed_event 1 11 `a 1 long_press_handled 1 12 `us 1 debounce_delay_ms 2 13 `us 1 long_press_ms 2 15 `a 1 active_low 1 17 ]
+"4 C:\Users\admin\Desktop\MorsePIC.X\button.c
+[v _button_create button_create `(S417  1 e 18 0 ]
+{
+[v button_create@active_low active_low `a  1 p 1 wreg ]
+"16
+[v button_create@9950 F9950 `S417  1 a 18 19 ]
+"4
+[v button_create@active_low active_low `a  1 p 1 wreg ]
+[v button_create@debounce_ms debounce_ms `us  1 p 2 0 ]
+[v button_create@long_press_ms long_press_ms `us  1 p 2 2 ]
+[v button_create@F9949 F9949 `S417  1 s 18 F9949 ]
+[v button_create@active_low active_low `a  1 p 1 18 ]
+"17
+} 1
+"49 C:\Users\admin\Desktop\MorsePIC.X\morse.c
+[v _add_morse_symbol add_morse_symbol `(v  1 e 1 0 ]
+{
+[v add_morse_symbol@symbol symbol `uc  1 p 1 wreg ]
+[v add_morse_symbol@symbol symbol `uc  1 p 1 wreg ]
+[v add_morse_symbol@symbol symbol `uc  1 p 1 23 ]
+"67
+} 1
+"32 C:\Users\admin\Desktop\MorsePIC.X\sys_time.c
+[v _millis millis `(ul  1 e 4 0 ]
+{
+"33
+[v millis@ms ms `ul  1 a 4 0 ]
+"34
+[v millis@gie_state gie_state `a  1 a 1 4 ]
+"39
+} 0
+"50 C:\Users\admin\Desktop\MorsePIC.X\i2c_lcd.c
+[v _LCD_String LCD_String `(v  1 e 1 0 ]
+{
+[v LCD_String@str str `*.4DCuc  1 p 1 17 ]
+"54
+} 0
+"56
+[v _LCD_SetCursor LCD_SetCursor `(v  1 e 1 0 ]
+{
+[v LCD_SetCursor@row row `uc  1 p 1 wreg ]
+"57
+[v LCD_SetCursor@address address `uc  1 a 1 20 ]
+"56
+[v LCD_SetCursor@row row `uc  1 p 1 wreg ]
+[v LCD_SetCursor@col col `uc  1 p 1 18 ]
+[v LCD_SetCursor@row row `uc  1 p 1 19 ]
+"59
+} 1
+"50 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"64 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"171
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
+"173
+} 0
+"55 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"118
+} 0
+"58 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"66
+} 0
+"167 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/i2c_master.c
+[v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
+{
+"174
+} 0
+"65 C:\Users\admin\Desktop\MorsePIC.X\i2c_lcd.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"79
+} 0
+"61
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+{
+"63
+} 0
+"149
+[v _LCD_CreateChar LCD_CreateChar `(v  1 e 1 0 ]
+{
+[v LCD_CreateChar@location location `uc  1 p 1 wreg ]
+"156
+[v LCD_CreateChar@i i `i  1 a 2 22 ]
+"149
+[v LCD_CreateChar@location location `uc  1 p 1 wreg ]
+[v LCD_CreateChar@charmap charmap `*.25DCuc  1 p 2 18 ]
+[v LCD_CreateChar@location location `uc  1 p 1 21 ]
+"159
+} 1
+"39
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+{
+[v LCD_Command@cmd cmd `uc  1 p 1 wreg ]
+[v LCD_Command@cmd cmd `uc  1 p 1 wreg ]
+[v LCD_Command@cmd cmd `uc  1 p 1 17 ]
+"44
+} 1
+"46
+[v _LCD_Char LCD_Char `(v  1 e 1 0 ]
+{
+[v LCD_Char@data data `uc  1 p 1 wreg ]
+[v LCD_Char@data data `uc  1 p 1 wreg ]
+[v LCD_Char@data data `uc  1 p 1 16 ]
+"48
+} 1
+"34
+[v _LCD_Send LCD_Send `(v  1 s 1 LCD_Send ]
+{
+[v LCD_Send@value value `uc  1 p 1 wreg ]
+[v LCD_Send@value value `uc  1 p 1 wreg ]
+[v LCD_Send@mode mode `uc  1 p 1 13 ]
+[v LCD_Send@value value `uc  1 p 1 15 ]
+"37
+} 1
+"22
+[v _LCD_Write_Nibble LCD_Write_Nibble `(v  1 s 1 LCD_Write_Nibble ]
+{
+[v LCD_Write_Nibble@nibble nibble `uc  1 p 1 wreg ]
+"23
+[v LCD_Write_Nibble@data data `uc  1 a 1 12 ]
+"22
+[v LCD_Write_Nibble@nibble nibble `uc  1 p 1 wreg ]
+[v LCD_Write_Nibble@mode mode `uc  1 p 1 10 ]
+[v LCD_Write_Nibble@nibble nibble `uc  1 p 1 11 ]
+"32
+} 1
+"6
+[v _I2C_Write_Byte I2C_Write_Byte `(v  1 s 1 I2C_Write_Byte ]
+{
+[v I2C_Write_Byte@addr addr `uc  1 p 1 wreg ]
+[v I2C_Write_Byte@addr addr `uc  1 p 1 wreg ]
+[v I2C_Write_Byte@data data `uc  1 p 1 9 ]
+[v I2C_Write_Byte@addr addr `uc  1 p 1 9 ]
+"20
+} 1
+"176 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/i2c_master.c
+[v _I2C_Open I2C_Open `(E10203  1 e 1 0 ]
+{
+[v I2C_Open@address address `uc  1 p 1 wreg ]
+"178
+[v I2C_Open@returnValue returnValue `E358  1 a 1 3 ]
+"176
+[v I2C_Open@address address `uc  1 p 1 wreg ]
+"178
+[v I2C_Open@address address `uc  1 p 1 2 ]
+"207
+} 1
+"543
+[v _I2C_MasterOpen I2C_MasterOpen `T(a  1 s 1 I2C_MasterOpen ]
+{
+"555
+} 0
+"251
+[v _I2C_MasterWrite I2C_MasterWrite `(E10203  1 e 1 0 ]
+{
+"254
+} 0
+"224
+[v _I2C_MasterOperation I2C_MasterOperation `(E358  1 e 1 0 ]
+{
+[v I2C_MasterOperation@read read `a  1 p 1 wreg ]
+"226
+[v I2C_MasterOperation@returnValue returnValue `E358  1 a 1 8 ]
+"224
+[v I2C_MasterOperation@read read `a  1 p 1 wreg ]
+"226
+[v I2C_MasterOperation@read read `a  1 p 1 7 ]
+"244
+} 1
+"312
+[v _I2C_Poller I2C_Poller `(v  1 s 1 I2C_Poller ]
+{
+"319
+} 0
+"650
+[v _I2C_MasterWaitForEvent I2C_MasterWaitForEvent `T(v  1 s 1 I2C_MasterWaitForEvent ]
+{
+"659
+} 0
+"321
+[v _I2C_MasterFsm I2C_MasterFsm `T(v  1 s 1 I2C_MasterFsm ]
+{
+"330
+} 0
+"500
+[v _I2C_DO_ADDRESS_NACK I2C_DO_ADDRESS_NACK `(E10273  1 s 1 I2C_DO_ADDRESS_NACK ]
+{
+"512
+} 0
+"494
+[v _I2C_DO_RESET I2C_DO_RESET `(E10273  1 s 1 I2C_DO_RESET ]
+{
+"499
+} 0
+"488
+[v _I2C_DO_RX_NACK_RESTART I2C_DO_RX_NACK_RESTART `(E10273  1 s 1 I2C_DO_RX_NACK_RESTART ]
+{
+"492
+} 0
+"482
+[v _I2C_DO_RX_NACK_STOP I2C_DO_RX_NACK_STOP `(E10273  1 s 1 I2C_DO_RX_NACK_STOP ]
+{
+"486
+} 0
+"475
+[v _I2C_DO_RX_ACK I2C_DO_RX_ACK `(E10273  1 s 1 I2C_DO_RX_ACK ]
+{
+"479
+} 0
+"469
+[v _I2C_DO_SEND_STOP I2C_DO_SEND_STOP `(E10273  1 s 1 I2C_DO_SEND_STOP ]
+{
+"473
+} 0
+"463
+[v _I2C_DO_SEND_RESTART I2C_DO_SEND_RESTART `(E10273  1 s 1 I2C_DO_SEND_RESTART ]
+{
+"467
+} 0
+"456
+[v _I2C_DO_SEND_RESTART_WRITE I2C_DO_SEND_RESTART_WRITE `(E10273  1 s 1 I2C_DO_SEND_RESTART_WRITE ]
+{
+"460
+} 0
+"450
+[v _I2C_DO_SEND_RESTART_READ I2C_DO_SEND_RESTART_READ `(E10273  1 s 1 I2C_DO_SEND_RESTART_READ ]
+{
+"454
+} 0
+"402
+[v _I2C_DO_RCEN I2C_DO_RCEN `(E10273  1 s 1 I2C_DO_RCEN ]
+{
+"407
+} 0
+"378
+[v _I2C_DO_RX I2C_DO_RX `(E10273  1 s 1 I2C_DO_RX ]
+{
+"400
+} 0
+"354
+[v _I2C_DO_TX I2C_DO_TX `(E10273  1 s 1 I2C_DO_TX ]
+{
+"376
+} 0
+"347
+[v _I2C_DO_SEND_ADR_WRITE I2C_DO_SEND_ADR_WRITE `(E10273  1 s 1 I2C_DO_SEND_ADR_WRITE ]
+{
+"352
+} 0
+"340
+[v _I2C_DO_SEND_ADR_READ I2C_DO_SEND_ADR_READ `(E10273  1 s 1 I2C_DO_SEND_ADR_READ ]
+{
+"345
+} 0
+"333
+[v _I2C_DO_IDLE I2C_DO_IDLE `(E10273  1 s 1 I2C_DO_IDLE ]
+{
+"338
+} 0
+"409
+[v _I2C_DO_TX_EMPTY I2C_DO_TX_EMPTY `(E10273  1 s 1 I2C_DO_TX_EMPTY ]
+{
+"424
+} 0
+"645
+[v _I2C_MasterSetIrq I2C_MasterSetIrq `T(v  1 s 1 I2C_MasterSetIrq ]
+{
+"648
+} 0
+"598
+[v _I2C_MasterIsNack I2C_MasterIsNack `T(a  1 s 1 I2C_MasterIsNack ]
+{
+"601
+} 0
+"568
+[v _I2C_MasterSendTxData I2C_MasterSendTxData `T(v  1 s 1 I2C_MasterSendTxData ]
+{
+[v I2C_MasterSendTxData@data data `uc  1 p 1 wreg ]
+[v I2C_MasterSendTxData@data data `uc  1 p 1 wreg ]
+"570
+[v I2C_MasterSendTxData@data data `uc  1 p 1 2 ]
+"571
+} 1
+"603
+[v _I2C_MasterSendAck I2C_MasterSendAck `T(v  1 s 1 I2C_MasterSendAck ]
+{
+"607
+} 0
+"563
+[v _I2C_MasterGetRxData I2C_MasterGetRxData `T(uc  1 s 1 I2C_MasterGetRxData ]
+{
+"566
+} 0
+"609
+[v _I2C_MasterSendNack I2C_MasterSendNack `T(v  1 s 1 I2C_MasterSendNack ]
+{
+"613
+} 0
+"583
+[v _I2C_MasterStartRx I2C_MasterStartRx `T(v  1 s 1 I2C_MasterStartRx ]
+{
+"586
+} 0
+"170 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/examples/i2c_master_example.c
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E363  1 s 1 rdBlkRegCompleteHandler ]
+{
+[v rdBlkRegCompleteHandler@ptr ptr `*.30v  1 p 1 8 ]
+"175
+} 0
+"156
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E363  1 s 1 wr1RegCompleteHandler ]
+{
+[v wr1RegCompleteHandler@ptr ptr `*.30v  1 p 1 8 ]
+"161
+} 0
+"149
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E363  1 s 1 rd2RegCompleteHandler ]
+{
+[v rd2RegCompleteHandler@ptr ptr `*.30v  1 p 1 8 ]
+"154
+} 0
+"142
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E363  1 s 1 rd1RegCompleteHandler ]
+{
+[v rd1RegCompleteHandler@ptr ptr `*.30v  1 p 1 8 ]
+"147
+} 0
+"525 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/i2c_master.c
+[v _I2C_CallbackReturnReset I2C_CallbackReturnReset `(E363  1 e 1 0 ]
+{
+"528
+} 0
+"520
+[v _I2C_CallbackReturnStop I2C_CallbackReturnStop `(E363  1 e 1 0 ]
+{
+"523
+} 0
+"163 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/examples/i2c_master_example.c
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E363  1 s 1 wr2RegCompleteHandler ]
+{
+[v wr2RegCompleteHandler@ptr ptr `*.30v  1 p 1 8 ]
+"168
+} 0
+"273 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/i2c_master.c
+[v _I2C_SetDataCompleteCallback I2C_SetDataCompleteCallback `(v  1 e 1 0 ]
+{
+[v I2C_SetDataCompleteCallback@cb cb `*.37(E363  1 p 2 0 ]
+[v I2C_SetDataCompleteCallback@ptr ptr `*.30v  1 p 1 2 ]
+"276
+} 0
+"298
+[v _I2C_SetCallback I2C_SetCallback `(v  1 s 1 I2C_SetCallback ]
+{
+[v I2C_SetCallback@idx idx `E10291  1 p 1 wreg ]
+[v I2C_SetCallback@idx idx `E10291  1 p 1 wreg ]
+[v I2C_SetCallback@cb cb `*.37(E363  1 p 2 2 ]
+[v I2C_SetCallback@ptr ptr `*.30v  1 p 1 4 ]
+"300
+[v I2C_SetCallback@idx idx `E10291  1 p 1 7 ]
+"310
+} 1
+"263
+[v _I2C_SetBuffer I2C_SetBuffer `(v  1 e 1 0 ]
+{
+[v I2C_SetBuffer@buffer buffer `*.39v  1 p 2 2 ]
+[v I2C_SetBuffer@bufferSize bufferSize `ui  1 p 2 4 ]
+"271
+} 0
+"593
+[v _I2C_MasterStop I2C_MasterStop `T(v  1 s 1 I2C_MasterStop ]
+{
+"596
+} 0
+"573
+[v _I2C_MasterEnableRestart I2C_MasterEnableRestart `T(v  1 s 1 I2C_MasterEnableRestart ]
+{
+"576
+} 0
+"588
+[v _I2C_MasterStart I2C_MasterStart `T(v  1 s 1 I2C_MasterStart ]
+{
+"591
+} 0
+"209
+[v _I2C_Close I2C_Close `(E10203  1 e 1 0 ]
+{
+"211
+[v I2C_Close@returnValue returnValue `E358  1 a 1 2 ]
+"222
+} 0
+"635
+[v _I2C_MasterDisableIrq I2C_MasterDisableIrq `T(v  1 s 1 I2C_MasterDisableIrq ]
+{
+"638
+} 0
+"557
+[v _I2C_MasterClose I2C_MasterClose `T(v  1 s 1 I2C_MasterClose ]
+{
+"561
+} 0
+"640
+[v _I2C_MasterClearIrq I2C_MasterClearIrq `T(v  1 s 1 I2C_MasterClearIrq ]
+{
+"643
+} 0
+"54 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"73
+} 0
+"23 C:\Users\admin\Desktop\MorsePIC.X\sys_time.c
+[v _sys_time_isr sys_time_isr `(v  1 e 1 0 ]
+{
+"30
+} 0
+"142 C:\Users\admin\Desktop\MorsePIC.X\mcc_generated_files/tmr1.c
+[v _TMR1_Reload TMR1_Reload `(v  1 e 1 0 ]
+{
+"145
+} 0
+"157
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+{
+"168
+} 0
+"120
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
+"140
+} 0
+"175
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"178
+} 0
